@@ -150,7 +150,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
+    m_HSlider: 1
     m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
@@ -163,18 +163,18 @@ MonoBehaviour:
       y: 17
       width: 1366
       height: 597
-    m_Scale: {x: 1.0797224, y: 1.0797223}
-    m_Translation: {x: 683, y: 298.5}
+    m_Scale: {x: 1.494588, y: 1.494588}
+    m_Translation: {x: 666.2859, y: 286.9532}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -632.57
-      y: -276.46
-      width: 1265.14
-      height: 552.92
+      x: -445.79904
+      y: -191.99484
+      width: 913.96423
+      height: 399.4412
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
