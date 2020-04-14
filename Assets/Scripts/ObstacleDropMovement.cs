@@ -10,13 +10,21 @@ public class ObstacleDropMovement : MonoBehaviour
     private Vector3 pos2;
 
     public float max_y = 10f;
+    public bool is_max_y = true;
 
     // Use this for initialization
     void Start()
     {
-        int random_sign = Random.Range(0, 2) * 2 - 1; //get -1 or +1 to set obstacle on one end or the the other
-        pos1 = new Vector3(transform.position.x, max_y, transform.position.z);
-        pos2 = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        if (is_max_y)
+        {
+            pos1 = new Vector3(transform.position.x, max_y, transform.position.z);
+            pos2 = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        }
+        else{
+            pos1 = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            pos2 = new Vector3(transform.position.x, max_y, transform.position.z);
+        }
+
     }
 
     // Update is called once per frame
