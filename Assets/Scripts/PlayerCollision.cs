@@ -12,5 +12,10 @@ public class PlayerCollision : MonoBehaviour {
             movement.enabled = false;
             FindObjectOfType<GameManager>().EndGame();
         }
+        if (collisionInfo.collider.tag == "Bullet")
+        {
+            movement.enabled = false;
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 }
