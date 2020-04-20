@@ -6,10 +6,12 @@ public class Shoot : MonoBehaviour {
     public float startTimeBtwShots; //amount of time to shoot
 
     public GameObject projectile;
+    private Vector3 projectile_pos;
     // Use this for initialization
     void Start()
     {
         timeBtwShots = startTimeBtwShots;
+        projectile_pos = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
     }
 
     // Update is called once per frame
@@ -17,7 +19,7 @@ public class Shoot : MonoBehaviour {
     {
         if(timeBtwShots <= 0)
         {
-            Instantiate(projectile, transform.position, Quaternion.identity);// bullet appear at enemy position w/ no rotation
+            Instantiate(projectile, projectile_pos, Quaternion.identity);// bullet appear at enemy position w/ no rotation
             timeBtwShots = startTimeBtwShots;//reset counter
         }
         else
